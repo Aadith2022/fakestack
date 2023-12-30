@@ -1,0 +1,807 @@
+/* Add your CSS here */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times New Roman;
+    overflow-x: hidden;
+     padding-top: 80px; /* need this for the fixed header */
+}
+
+.header{
+    background-color: rgb(198, 198, 198);
+    display:flex;
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+
+    border-left: none;
+    border-right: none; 
+
+    position: fixed;
+    top: 0; 
+    z-index: 1000; /* need this for the fixed header */
+    
+}
+
+.logoutdiv {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout {
+    padding: 10px;
+    height: fit-content;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(53, 56, 56);
+    color: white;
+}
+
+.logout:hover {
+    background-color: rgb(102, 100, 100);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sort-buttons {
+    padding: 5px;
+    background-color: white;
+}
+
+.answers-display {
+    width: 85%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* .answers-display p{
+    display: inline;
+} */
+
+.answers-display li {
+    display: block;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    list-style-type: none
+}
+
+.user_info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.username_div {
+    width: 250px;
+    /* padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px; */
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.username_div nav {
+    background-color: lightgray;
+    height: 30%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.username_div h3 {
+    font-style:italic;
+    color: green;
+}
+
+.userrep_div {
+    width: 250px;
+    /* padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px; */
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.userrep_div nav {
+    background-color: lightgray;
+    height: 30%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.userrep_div h3 {
+    font-style:italic;
+    color: green;
+}
+
+.user_questions_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user_questions {
+    margin-left: 100px;
+    border: 1px solid black;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+.user_questions li {
+    list-style-type: decimal;
+    text-align: center;
+}
+
+.user_questions nav {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+
+
+.user_links li {
+    list-style-type: none;
+}
+
+.comments-display {
+    width: 700px;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.comments-display p{
+    display: inline;
+}
+
+.comments-display li {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    list-style-type: none
+}
+
+.comments-display h3 {
+    margin-left: 30px;
+}
+
+.answer_comments {
+    border: 1px solid black;
+    margin: 30px;
+}
+
+.answer_comments li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.answer_comments  p {
+    display: inline;
+}
+
+.editAnswer_btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: gray;
+    margin: 15px;
+}
+
+.sort-buttons:hover {
+    cursor:pointer;
+
+    background-color: #E5E5E5;
+    transition: 0.3s;
+
+}
+
+.title{
+    font-size: 40px;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+
+    margin-left: 300px;
+
+    
+}
+
+
+.search-bar{
+    width: 250px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    margin-right: 400px;
+
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.menu{
+   width: 20%; 
+   border-right: 1.5px rgb(87, 83, 83) dashed;
+}
+
+
+.menu-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(42, 83, 218);
+    font-size: 23px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.menu-nav a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(42, 83, 218);
+}
+
+.question-nav {
+    background-color: lightgray;
+}
+
+.questTit:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.user_lister {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user_delete {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(214, 66, 66);
+    color: white;
+    margin: 15px;
+}
+
+.no_quest {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+.profileTit:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.questions-box{
+
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchDiv{
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.questions-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.ask-btn{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(35, 144, 246);
+    color: white;
+    margin-top: 25px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-right: 50px;
+    font-size: 16px;
+    
+}
+
+.noresults{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    margin-left: 30px;
+   
+}
+
+.ask-btn:hover {
+    cursor: pointer;
+}
+
+.questions-nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px rgb(87, 83, 83) dashed;
+    margin-left: 0;
+}
+
+.num-questions{
+    font-size: 23px;
+    padding-left: 30px;
+}
+
+.questions-sort{
+    margin-top: 25px;
+    margin-right: 180px;
+}
+
+.questions-sort a{
+    border: 1.75px solid black;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: -5px;   
+}
+
+.questDisplay {
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+
+.questDisplay li {
+
+    border-top: 1px gray dashed;
+    border-bottom: 1px gray dashed;
+    padding: 20px;
+  
+}
+
+.question-list-elements {
+    display: flex;
+}
+
+.questDisplay li h3 {
+    color: blue;
+    cursor: pointer;
+}
+
+.view-heading {
+    text-align: center;
+    padding: 5px;
+}
+
+.view-time {
+    padding: 5px;
+}
+
+.view-data {
+    padding: 5px;
+}
+
+p.asker {
+    color: crimson;
+}
+
+p.answerer {
+    color: green;
+}
+
+.questions-sort a:last-child{
+    margin-right: -5px;
+}
+
+/* THE START OF THE QUESTIONS FORM CSS */
+
+.question-form{
+    flex: 1;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.send-btn {
+    padding: 5px;
+    background-color: rgb(35, 144, 246);
+    color: #fff;
+    width: 150px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+}
+
+
+.question-require{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.question-box-form{
+    width: 800px;
+  
+}
+
+.required-field-header {
+    margin-left: 240px;
+    color: red;
+}
+
+.question-text{
+    font-size: 14px;
+}
+
+.error-message{
+    font-size: 18px;
+    color: red;
+}
+
+/* THE END OF THE QUESTIONS FORM CSS */
+
+/* THE START OF QUESTION DETAILS CSS */
+
+.question-details{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.quest-column{
+    display: flex;
+    margin: 25px;
+    /* justify-content: space-between; */
+   
+}
+
+.quest-column2{
+    border-bottom: 1.5px rgb(87, 83, 83) dashed;
+  
+}
+
+.quest-column > * {
+    margin-right: 50px;
+    margin-left: 45px;
+}
+
+.quest-text{
+    width: 45%;
+}
+
+.quest-user{
+    color: red;
+}
+
+.user-date{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.ask-btn2{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(35, 144, 246);
+    color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.ans-btn{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(35, 144, 246);
+    color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.post-ans-btn{
+    width: 130px;
+    height: 40px;
+    background-color: rgb(35, 144, 246);
+    color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+/* THE END OF QUESTION DETAILS CSS */
+
+/* START OF ANSWER FORM CSS */
+
+.answer-form-div{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.answers-list li{
+    border-bottom: 1.5px rgb(87, 83, 83) dashed;
+}
+
+/* END OF ANSWER FORM CSS */
+
+
+ /* START OF TAGS PAGE CSS */
+
+ .tag-page{
+    flex: 1;
+ }
+ .top-col{
+    display: flex;
+    margin-top: 20px;
+ }
+
+ .top-col > * {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.tags-list{
+    list-style-type: none;
+}
+
+.tags-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+    display: inline; /*turns list item from block to inline elemnts */
+    
+}
+
+.tag-btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.edit-tag-div {
+    display: flex;
+    justify-content: center;
+}
+
+.tags-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+    display: inline; /*turns list item from block to inline elemnts */
+    
+}
+
+.tags-list li {
+    display: inline-block; /*turns list item from block to inline elemnts */
+    padding: 15px;
+    border: 2px rgb(87, 83, 83) dashed;
+    width: 200px;
+    min-height: 100px;
+    text-align: center;
+    margin: 50px;
+    margin-top: 10px;
+  
+    font-size: 18px;
+   
+}
+
+.tag_edit {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 5px;
+    background: gray;
+    color: white;
+}
+
+.tag_del {
+    padding-top: 5px;
+    margin: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgb(243, 7, 7);
+    color: white;
+}
+
+
+ /* END OF TAGS PAGE CSS */
+
+ /* HW 5 CSS START */
+
+ .formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+.loginForm{
+    text-align: center;
+    font-size: 20px;
+    transform: translateY(-100px);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.welcomeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    transform: translateY(-100px);
+    
+}
+
+.welcomeBtn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 18px;
+}
+
+
+.votesContainer{
+    margin-right:5px;
+    margin-left:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.commentContainer{
+    margin: 20px;
+  
+
+}
+
+.deleteBtn{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(235, 19, 19);
+    color: #fff;
+    width: 150px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.deleteAnsBtn{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(235, 19, 19);
+    color: #fff;
+    width: 60px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+/* HW 5 CSS END */
+
+ 
+
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
+@media (max-width: 1440px) {
+
+    .tags-list li {
+        width: 175px;
+    }
+
+}
+
+@media (max-width: 1380px) {
+    .title{
+        font-size: 35px;
+
+        margin-left: 400px;
+
+    }
+    .tags-list li {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 1290px) {
+    .title{
+        font-size: 30px;
+
+        margin-left: 300px;
+
+    }
+}
+
+@media (max-width: 1240px) {
+    .title{
+        font-size: 28px;
+
+        margin-left: 280px;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .title{
+        font-size: 24px;
+
+        margin-left: 180px;
+
+    }
+}
+
+@media (max-width: 680px) {
+    .title{
+        font-size: 20px;
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 470px) {
+    .title{
+        font-size: 14px;
+        margin-left: 80px;
+    }
+}
+
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
+/* PLEASE LEAVE THIS MEDIA AT THE BOTTOM AND WRITE CSS CODE ABOVE IT*/
