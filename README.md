@@ -1,6 +1,6 @@
 # Fake Stack Overflow
 
-This is a clone of the popular website, stackoverflow, which was created by a friend and I. In this web application users can login to ask questions, answer questions, leave comments, upvote/downvote others questions, and gain reputation
+This is a clone of the popular website, stackoverflow, which I created in conjunction with a team. In this web application users can login to ask questions, answer questions, leave comments, upvote/downvote others questions, and gain reputation
 
 
 ## Load Page
